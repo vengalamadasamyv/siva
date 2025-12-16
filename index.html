@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siva Hospital | Kovilpatti</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./asset/style/index.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"> -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./asset/logo/siva-1-logo.png">
+    <link rel="apple-touch-icon" href="./asset/logo/siva-1-logo.png">
+    <link rel="shortcut icon" href="./asset/logo/siva-logo.png">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar">
+    <a href="#" class="brand">
+        <img src="./asset/logo/header.png" class="logo">
+    </a>
+
+    <!-- Desktop Menu -->
+    <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./facility.html">Facilities</a>
+        <a href="./contact.html">Contact</a>
+    </div>
+    
+    <!-- button -->
+    <div class="nav-btn">
+        <button onclick="did()">Book an Appointment</button>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="openSidebar" class="burger" aria-expanded="false">
+        <img src="https://img.icons8.com/?size=100&id=4XllpQC1vpUz&format=png&color=000000" width="45px" style="color: black;">
+    </button>
+</nav>
+
+<!-- ===================== OVERLAY ===================== -->
+<div id="overlay" class="overlay"></div>
+
+<!-- ===================== SIDEBAR ===================== -->
+<aside id="sidebar" class="sidebar" aria-hidden="true">
+
+    <header>
+        <h2 style="color: aliceblue;">SIVA HOSPITAL</h2>
+        <button id="closeSidebar" class="close-btn"><img src="https://img.icons8.com/?size=100&id=7FSknHLAHdnP&format=png&color=ffffff" width="32px"></button>
+    </header>
+
+    <nav>
+        <a href="./index.html" class="side-link">Home</a>
+        <a href="./about.html" class="side-link">About</a>
+        <a href="./facility.html" class="side-link">Facilities</a>
+        <a href="./contact.html" class="side-link">Contact</a>
+        <button style="width: fit-content; padding: 8px 20px; margin-left: 10px; background-color: #fff; font-size: 14px; margin-top: 20px; border: none; border-radius: 20px; font-weight: 700;" onclick="did()">Book an Appointment</button>
+    </nav>
+
+</aside>
+
+
+<!-- ===================== MAIN CONTENT START ===================== -->
+<section class="doctor-hero">
+    <div class="hero-content">
+        <p class="tag">Kovilpatti’s Most Trusted Hospital</p>
+        <h1>A Place for Healing,<br><span>Hope, and Health</span></h1>
+        <p>At Siva Hospital, Kovilpatti, we treat every patient like family. Our team of dedicated doctors and nurses provide personalized care, ensuring comfort, safety, and complete support throughout your healing journey.</p>
+
+        <div class="search-box">
+            <button onclick="did()">Book an Appointment</button>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="./asset/Questions.png" alt="Doctor consulting patient">
+    </div>
+</section>
+
+
+<!-- ===================== Facility CONTENT Start ===================== -->
+<section class="specialties-section">
+
+    <h2 class="section-title">An Ecosystem for Clinical Excellence</h2>
+    <p class="subtitle">
+        Discover world-class healthcare at Siva’s specialized centres of medical innovation. 
+        Our advanced facilities offer unmatched expertise in key specialties and super specialties, 
+        setting new global standards in clinical excellence and patient care.
+    </p>
+
+    <div class="specialties-grid">
+
+        <!-- FEATURE CARD 1 -->
+        <div class="feature-card">
+            <img src="https://img.icons8.com/?size=100&id=52843&format=png&color=000000">
+            <div>
+                <h3>Gynaecology</h3>
+                <p>Female reproductive system</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://img.icons8.com/?size=100&id=P8fRhT9mygUE&format=png&color=000000">
+            <div>
+                <h3>Fertility Centre</h3>
+                <p>Couples achieve pregnancy</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://img.icons8.com/?size=100&id=84786&format=png&color=000000">
+            <div>
+                <h3>Paediatric</h3>
+                <p>Medical Care of Children</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://img.icons8.com/?size=100&id=Lma0kzb9tSSb&format=png&color=000000">
+            <div>
+                <h3>Orthopedist</h3>
+                <p>Care of the Skeletal System</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://img.icons8.com/?size=100&id=OnTqXEJuOMRy&format=png&color=000000">
+            <div>
+                <h3>IVF Center</h3>
+                <p>Assisted Reproductive Technology </p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://img.icons8.com/?size=100&id=BRSsxUsHnCf3&format=png&color=000000">
+            <div>
+                <h3>Trauma Care</h3>
+                <p>Immediate and Life-saving Treatment</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://img.icons8.com/?size=100&id=35796&format=png&color=000000">
+            <div>
+                <h3>Arthroscopic</h3>
+                <p>Surgical Procedure to Diagnose</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://img.icons8.com/?size=100&id=qQO6lVjT5coA&format=png&color=000000">
+            <div>
+                <h3>NICU & Vaccination Centre</h3>
+                <p>Child and Adult Vaccination Centre</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="https://img.icons8.com/?size=100&id=onsxqkOg0FIo&format=png&color=000000">
+            <div>
+                <h3>Scan Center</h3>
+                <p>All Scan System</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="view-btn" onclick="window.location.href='./facility.html'">View All Specialties ➜</button>
+
+</section>
+<!-- ===================== Speciality CONTENT End ===================== -->
+
+
+<!-- ===================== service CONTENT Start ===================== -->
+
+<section class="section">
+    <div class="left-box">
+        <img src="./asset/siva.png" alt="doctor" class="hero-img">
+
+        <div class="overlay">
+            <h2>Personalized Care, Transformed</h2>
+            <a href="#" class="learn-btn">Learn how we drive innovation</a>
+        </div>
+    </div>
+
+    <div class="right-box">
+        <h1>Board of the Doctor's</h1>
+        <p class="sub">Meet Our Expert Medical Team</p>
+
+        <div class="letters" onclick="did()">
+            <div class="letter-card">
+                <img src="./asset/aathmi.png" width="200px">
+                <div>
+                    <p class="doc-name">Dr. N. Aathmiga Sanjay</p>
+                    <p class="doc-stu">MBBS.,MS.(OG),DNB.,FCGSM</p>
+                    <p class="doc-sub">Fellow in Gynaec Endoscopy & Infertility Laparoscopic Surgeon & Infertility Specialist & Cosmetic Gynecologist</p>
+                </div>
+            </div>
+            <div class="letter-card">
+                <img src="./asset/sanjay.png">
+                <div>
+                    <p class="doc-name">Dr. S. Sanjay Sivanarayanan</p>
+                    <p class="doc-stu">MBBS.,MS.(Ortho), FASM,</p>
+                    <p class="doc-sub">Consultant Trauma, Sports Medicine, Spine and Arthroscopic Surgeon</p>
+                </div>
+            </div>
+            <div class="letter-card">
+                <img src="./asset/sivanarayanan.png">
+                <div>
+                    <p class="doc-name">Dr. S. Sivanarayanan</p>
+                    <p class="doc-stu">MBBS.,MD.(Paediatrics), PGPN(Boston)</p>
+                    <p class="doc-sub">Senior Consultant Paediatrics & Neonatologist</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ===================== service CONTENT end ===================== -->
+
+
+<!-- ===================== Why CONTENT Start ===================== -->
+
+    <section class="why-section">
+        <h2 class="title">Why Choose <span>Siva Hospital?</span></h2>
+
+        <p class="subtitle">
+            At Siva Hospital, we blend expert medical care with compassion, offering personalized
+            treatment to ensure every patient feels supported and valued throughout their healing journey.
+        </p>
+
+        <div class="cards">
+
+            <!-- Card 1 -->
+            <div class="card why1">
+                <h3>60+ Years of Excellence</h3>
+                <p>Decades of trusted care, prioritizing your health and well-being.</p>
+                <img src="./asset/bg.png" alt="hospital" />
+            </div>
+            <section class="why-card2">
+                <div class="why-card2-1">
+            <!-- Card 2 -->
+            <div class="card why2">
+                <h3>1000+ Expert Medical Care</h3>
+                <p>A team of professionals committed to your health and well-being.</p>
+                <img src="./asset/doctors.png" alt="doctors" />
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card why3">
+                <h3>Advanced Medical Technology</h3>
+                <p>Medical technology for accurate diagnosis and effective treatment.</p>
+                <img src="./asset/instrument.png" alt="tech" />
+            </div>
+                </div>
+            <!-- Card 4 -->
+                <div class="why-card2-2">
+            <div class="card why4">
+                <h3>98% Happy Patients</h3>
+                <p>We take pride in creating a positive experience for every patient.</p>
+                <img src="./asset/patient.png" alt="happy patient" />
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card why5">
+                <h3>40+ Years Trusted Pharmacy</h3>
+                <p>We deliver high-quality pharmacy solutions with reliability.</p>
+                <img src="./asset/pharmacy.png" alt="pharmacy" />
+            </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+<!-- ===================== why CONTENT end ===================== -->
+
+
+<!-- ===================== Testimonial CONTENT START ===================== -->
+<div class="testimonial-section">
+<div class="testimonial-sub">
+    <div class="left-content">
+        <h2>Healing Spaces, Caring Moments</h2>
+        <p>Explore our hospital’s modern infrastructure, compassionate care, and patient comfort</p>
+    </div>
+
+<div class="slider-wrapper">
+    <div class="slider-container" id="slider">
+
+        <div class="testimonial-card"><img src="./asset/scroll1.webp"></div>
+        <div class="testimonial-card"><img src="./asset/scroll2.webp"></div>
+        <div class="testimonial-card"><img src="./asset/scroll3.webp"></div>
+        <div class="testimonial-card"><img src="./asset/scroll4.webp"></div>
+        <div class="testimonial-card"><img src="./asset/scroll5.webp"></div>
+        <div class="testimonial-card"><img src="./asset/scroll6.webp"></div>
+        <div class="testimonial-card"><img src="./asset/scroll7.webp"></div>
+        <div class="testimonial-card"><img src="./asset/scroll8.webp"></div>
+
+    </div>
+</div>
+
+<!-- IMAGE ZOOM MODAL -->
+<div class="image-modal" id="imageModal">
+    <span class="close" onclick="closeModal()">×</span>
+    <span class="arrow left" onclick="prevImage()">❮</span>
+    <img id="modalImg">
+    <span class="arrow right" onclick="nextImage()">❯</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- ===================== Testimonial CONTENT END ===================== -->
+
+
+<!-- ===================== Partner CONTENT START ===================== -->
+<section class="partners-section">
+    <h2>Trusted by Leading Healthcare Partners</h2>
+    <p class="subtext">
+        Collaborating with trusted partners to deliver the best in healthcare services
+    </p>
+
+    <div class="partner-logos">
+        <img src="./asset/logo/siva-logo.png" alt="BPJS Kesehatan">
+        <img src="./asset/logo/siva-logo.png" alt="Allianz">
+        <img src="./asset/logo/siva-logo.png" alt="Avrist">
+        <img src="./asset/logo/siva-logo.png" alt="AXA">
+        <img src="./asset/logo/siva-logo.png" alt="BPJS Ketenagakerjaan">
+        <img src="./asset/logo/siva-logo.png" alt="Jasa Raharja">
+    </div>
+</section>
+<!-- ===================== Partner CONTENT END ===================== -->
+
+<!-- Popup Start -->
+<div class="form-container" id="did">
+  <!-- Author: Your Team -->
+  <div class="form-wrapper">
+    <form action="" method="POST">
+    <div class="did-head">
+        <p class="app-head">We’re Here to Help You</p>
+        <a onclick="does()" class="bclose"><img src="https://img.icons8.com/?size=100&id=3062&format=png&color=000000"></a>
+    </div>
+    <hr>
+      <div class="form-group">
+        <label for="name" class="form-label">Your Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Eg. Ram"
+          class="form-input"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Eg. 9876543210"
+          class="form-input"/>
+      </div>
+      <div class="form-row">
+        <div class="form-col">
+          <div class="form-group">
+            <label for="date" class="form-label">Doctor</label>
+            <select
+              name="doctor"
+              id="date"
+              class="form-input"
+            >
+            <option disabled selected>Select Your Consultant</option>
+            <option value="Dr.S.Sivanarayanan">Dr.S.Sivanarayanan ( Neonatalogy )</option>
+            <option value="Dr.Sanjay Sivanarayanan">Dr.Sanjay Sivanarayanan ( Arthroscopy )</option>
+            <option value="Dr.N.Athmika Sanjay">Dr.N.Athmika Sanjay ( Endogynecology )</option>
+        </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-col">
+          <div class="form-group">
+            <label for="date" class="form-label">Appointment Date & Time</label>
+            <input
+              type="datetime-local"
+              name="date"
+              id="date"
+              class="form-input"
+            />
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <button class="form-button" onclick="did()">Book Appointment</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Popup End -->
+
+
+<!-- ===================== FOOTER CONTENT START ===================== -->
+<footer class="footer">
+    <div class="footer-top">
+        <h2>Your Health, Its Our Priority</h2>
+
+        <div class="footer-actions">
+            <div class="action-box">
+                <div class="icon" onclick="window.location.href='tel:04632 224 387'">
+                    <img src="https://img.icons8.com/?size=100&id=hTTzWSpAOgIV&format=png&color=000000" width="30px">
+                <p>Emergency Call</p>
+                </div>
+                <span>➜</span>
+            </div>
+
+            <div class="action-box" onclick="did()">
+                <div class="icon">
+                    <img src="https://img.icons8.com/?size=100&id=1gzwu5aKK4Xx&format=png&color=000000" width="30px">
+                <p>Find Doctor</p>
+                </div>
+                <span>➜</span>
+            </div>
+
+            <div class="action-box" onclick="did()">
+                <div class="icon">
+                    <img src="https://img.icons8.com/?size=100&id=Ah0jYxh6v6Q9&format=png&color=000000" width="30px">
+                <p>Make an Appointment</p>
+                </div>
+                <span>➜</span>
+            </div>
+        </div>
+
+        <div class="footer-mid">
+            <div class="logo-text">
+                <img src="./asset/logo/footer.png" alt="logo" class="hospital-logo">
+                <p>Leading healthcare provider committed <br> to excellence in medical treatment</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=ffffff"></a>
+                <a href="#"><img src="https://img.icons8.com/?size=100&id=118467&format=png&color=ffffff"></a>
+                <a href="#"><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=ffffff"></a>
+                <a href="#"><img src="https://img.icons8.com/?size=100&id=e19IaX7vpxi9&format=png&color=ffffff"></a>
+                <a href="#"><img src="https://img.icons8.com/?size=100&id=M486asakOqWV&format=png&color=ffffff"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <div class="col">
+            <h3>Quick Links</h3>
+            <a href="#">About</a>
+            <a href="#">Doctors</a>
+            <a href="#">Facilities</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy policy</a>
+        </div>
+
+        <div class="col" onclick="did()">
+            <h3>Speciality</h3>
+            <a>Gynaecology</a>
+            <a>Fertility Centre</a>
+            <a>Paediatric</a>
+            <a>Orthopedic</a>
+            <a>IVF Centre</a>
+            <a>Truma Care</a>
+            <a>Arthroscopic</a>
+            <a>NICU & Vaccination Centre</a>
+        </div>
+
+        <div class="col">
+            <h3>SIVA HOSPITAL</h3>
+            <a href="#" style="display: flex; align-items:start;"><img src="https://img.icons8.com/?size=100&id=PZTTDl8ML4vy&format=png&color=000000" width="15px">&nbsp;85, AKS Theatre Road,Kovilpatti - 628 502.</a><br>
+            <a href="#" style="display: flex;"><img src="https://img.icons8.com/?size=100&id=Q9TV5scheiMQ&format=png&color=000000" width="15px">&nbsp;70940 43332, 04632 224 387</a><br>
+            <a href="#" style="display: flex;"><img src="https://img.icons8.com/?size=100&id=MFd4aKzItnZK&format=png&color=000000" width="15px">&nbsp;sivahospitalkovilpatii@gmail.com</a><br>
+        </div>
+
+        <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.7876501457363!2d77.86228997479571!3d9.17361879089362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b26de6e07fe9%3A0x61efdff115d4acb2!2sSiva%20Multi-speciality%20Hospital%20l%20Centre%20for%20Fertility%20and%20maternity%20%2CPaediatrics%20and%20Orthopaedics!5e0!3m2!1sen!2sin!4v1765263847830!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p style="font-size: 16px; line-height: 22px;">Copyright © 2025, Siva Hospital. Developed by <a href="https://creativetechfactory.in/" style="text-decoration: none; color: white; font-weight: bold;">Creative Tech Factory.</a>
+</footer>
+
+<!-- ===================== FOOTER CONTENT END ===================== -->
+
+
+
+<!-- ===================== JS FOR SIDEBAR ===================== -->
+<script src="./index.js"></script>
+
+</body>
+</html>
